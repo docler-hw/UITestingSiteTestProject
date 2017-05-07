@@ -1,12 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Assist;
 using UITestingSiteTestProject.PageObjects;
 
 namespace UITestingSiteTestProject.Steps
@@ -35,13 +29,5 @@ namespace UITestingSiteTestProject.Steps
             new FormPageObject(_driver).SubmitHelloForm();
         }
 
-        [Then(@"the Hello page should welcome (.*)")]
-        public void ThenTheHelloPageShouldWelcomeTheName(string name)
-        {
-            HelloPageObject helloPageObject = new HelloPageObject(_driver);
-            Assert.That(helloPageObject.IsPageOpened(), "Hello page is not opened");
-            string expectedHelloMessage = helloPageObject.ParseHelloMessage();
-            Assert.AreEqual("Hello " + name + "!", expectedHelloMessage, "Hello text does not cointan the expected value");
-        }
     }
 }
