@@ -7,6 +7,12 @@ Technologies used for the project:
  * Visual Studio 2017 Community Edition with the latest .NET versions
  * The test cases written in Gherkin, C#, Specflow, NUnit, Selenium (Chrome WebDriver)
 
+### Project structure:
+ * Features folder: It contains all feature file with the specified test cases
+ * PageObjects folder: It contains all the page object classes related to the tested pages
+ * Steps folder: It contains all the binded tests steps for the feature files
+ * Hooks.cs: this class is the responsible for the different NUnit test hooks
+
 ### Steps to execute the test cases:
 
 1. Checkout the content of this repository

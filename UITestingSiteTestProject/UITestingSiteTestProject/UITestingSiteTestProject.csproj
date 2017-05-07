@@ -68,7 +68,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base.cs" />
     <Compile Include="Features\REQ-UI-11-Form.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
