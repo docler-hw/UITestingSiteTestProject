@@ -67,7 +67,7 @@ namespace UITestingSiteTestProject.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Hello test")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("high")]
         [NUnit.Framework.TestCaseAttribute("John", new string[0])]
         [NUnit.Framework.TestCaseAttribute("Sophia", new string[0])]
         [NUnit.Framework.TestCaseAttribute("Charlie", new string[0])]
@@ -75,7 +75,7 @@ namespace UITestingSiteTestProject.Features
         public virtual void HelloTest(string name, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "mytag"};
+                    "high"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

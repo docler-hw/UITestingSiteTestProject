@@ -4,7 +4,7 @@
 	you should get redirect to the Hello page, 
 	and the following text should appear: <result>
 
-@mytag
+@high
 Scenario Outline: Hello test
 	Given I have opened the Form page
 	When I enter <Name> to the form

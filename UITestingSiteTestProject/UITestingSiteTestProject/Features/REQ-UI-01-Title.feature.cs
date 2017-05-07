@@ -65,11 +65,11 @@ namespace UITestingSiteTestProject.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Title - Home page test")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("moderate")]
         public virtual void Title_HomePageTest()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Title - Home page test", new string[] {
-                        "mytag"});
+                        "moderate"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
@@ -82,11 +82,11 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Title - Form page test")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("moderate")]
         public virtual void Title_FormPageTest()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Title - Form page test", new string[] {
-                        "mytag"});
+                        "moderate"});
 #line 10
 this.ScenarioSetup(scenarioInfo);
 #line 11
@@ -99,11 +99,11 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Title - Hello page test")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("moderate")]
         public virtual void Title_HelloPageTest()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Title - Hello page test", new string[] {
-                        "mytag"});
+                        "moderate"});
 #line 15
 this.ScenarioSetup(scenarioInfo);
 #line 16

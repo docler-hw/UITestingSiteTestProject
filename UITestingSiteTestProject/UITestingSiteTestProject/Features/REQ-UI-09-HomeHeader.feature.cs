@@ -66,11 +66,11 @@ namespace UITestingSiteTestProject.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("HomeHeader - From Home Page by Home and UI Testing button")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("low")]
         public virtual void HomeHeader_FromHomePageByHomeAndUITestingButton()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomeHeader - From Home Page by Home and UI Testing button", new string[] {
-                        "mytag"});
+                        "low"});
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
@@ -91,16 +91,18 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("HomeHeader - From Form Page by Home button")]
+        [NUnit.Framework.CategoryAttribute("low")]
         public virtual void HomeHeader_FromFormPageByHomeButton()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomeHeader - From Form Page by Home button", ((string[])(null)));
-#line 14
-this.ScenarioSetup(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomeHeader - From Form Page by Home button", new string[] {
+                        "low"});
 #line 15
- testRunner.Given("I have opened the Form page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 16
- testRunner.When("I clicked on the Home button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have opened the Form page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 17
+ testRunner.When("I clicked on the Home button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 18
  testRunner.Then("Header should be visible with \"Welcome to the Docler Holding QA Department\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -108,18 +110,18 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("HomeHeader - From Form page by UI Testing button")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("low")]
         public virtual void HomeHeader_FromFormPageByUITestingButton()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomeHeader - From Form page by UI Testing button", new string[] {
-                        "mytag"});
-#line 20
-this.ScenarioSetup(scenarioInfo);
+                        "low"});
 #line 21
- testRunner.Given("I have opened the Form page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 22
- testRunner.When("I clicked on the UI Testing button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have opened the Form page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 23
+ testRunner.When("I clicked on the UI Testing button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 24
  testRunner.Then("Header should be visible with \"Welcome to the Docler Holding QA Department\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

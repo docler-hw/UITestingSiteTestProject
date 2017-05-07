@@ -65,11 +65,11 @@ namespace UITestingSiteTestProject.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("FormButtonStatus - From Home page")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("low")]
         public virtual void FormButtonStatus_FromHomePage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("FormButtonStatus - From Home page", new string[] {
-                        "mytag"});
+                        "low"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
@@ -86,11 +86,11 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("FormButtonStatus - From Form page")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("low")]
         public virtual void FormButtonStatus_FromFormPage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("FormButtonStatus - From Form page", new string[] {
-                        "mytag"});
+                        "low"});
 #line 12
 this.ScenarioSetup(scenarioInfo);
 #line 13

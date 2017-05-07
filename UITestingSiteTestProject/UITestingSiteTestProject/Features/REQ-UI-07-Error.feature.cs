@@ -65,11 +65,11 @@ namespace UITestingSiteTestProject.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("ErrorButton - From Home page")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("high")]
         public virtual void ErrorButton_FromHomePage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ErrorButton - From Home page", new string[] {
-                        "mytag"});
+                        "high"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
@@ -84,11 +84,11 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("ErrorButton - From Form page")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("high")]
         public virtual void ErrorButton_FromFormPage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ErrorButton - From Form page", new string[] {
-                        "mytag"});
+                        "high"});
 #line 11
 this.ScenarioSetup(scenarioInfo);
 #line 12
