@@ -17,7 +17,7 @@ Technologies used for the project:
 If you would like to execute the test cases from Power Shell command line please execute the following steps:
 1. Go into the main folder of the repository
 2. Build the solution file
-3. Execute the test cases by the following command: `C:\Development\Projects\UITestingSiteTestProject\UITestingSiteTestProject\packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe C:\Development\Projects\UITestingSiteTestProject\UITestingSiteTestProject\UITestingSiteTestProject\bin\Debug\UITestingSiteTestProject.dll`
+3. Execute the test cases by the following command: `UITestingSiteTestProject\packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe UITestingSiteTestProject\UITestingSiteTestProject\bin\Debug\UITestingSiteTestProject.dll`
 
 ### Parallel test execution:
 Note that the test cases can be executed parallel. The default number of threads is equal to the number of processors or 2, whichever is greater. (Tested by 4 threads.)
