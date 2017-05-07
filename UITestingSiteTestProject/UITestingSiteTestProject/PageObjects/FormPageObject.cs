@@ -8,14 +8,13 @@ using System.Threading.Tasks;
 
 namespace UITestingSiteTestProject.PageObjects
 {
-    class FormPageObject
+    class FormPageObject : AbstractPageObject
     {
 
-        private OpenQA.Selenium.IWebDriver _driver;
-
         public FormPageObject(IWebDriver driver)
+            : base(driver)
         {
-            _driver = driver;
+            pageUrl = "http://uitest.duodecadits.com/form.html";
             PageFactory.InitElements(_driver, this);
         }
 
@@ -32,6 +31,16 @@ namespace UITestingSiteTestProject.PageObjects
         public void SubmitHelloForm()
         {
             btnSubmitHello.Click();
+        }
+
+        public bool IsOnlyOneInputBoxExistOnTheScreen()
+        {
+            return 1 == _driver.FindElements(By.XPath("//input")).Count;
+        }
+
+        public bool IsOnlyOneSubmitButtonExistOnTheScreen()
+        {
+            return 1 == _driver.FindElements(By.XPath("//button[@type='submit']")).Count;
         }
     }
 }

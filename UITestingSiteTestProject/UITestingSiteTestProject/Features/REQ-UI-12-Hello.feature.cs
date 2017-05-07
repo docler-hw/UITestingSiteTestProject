@@ -18,21 +18,21 @@ namespace UITestingSiteTestProject.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("HelloPage")]
-    public partial class HelloPageFeature
+    [NUnit.Framework.DescriptionAttribute("REQ-UI-12")]
+    public partial class REQ_UI_12Feature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "HelloPage.feature"
+#line 1 "REQ-UI-12-Hello.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "HelloPage", "\tOn the Form page, if you type <value>; \r\n\tthe input field and submit the form, \r" +
-                    "\n\tyou should get redirect to the\r\n\tHello page, and the following text should app" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "REQ-UI-12", "\tOn the Form page, if you type <value> the input field \r\n\tand submit the form, \r\n" +
+                    "\tyou should get redirect to the Hello page, \r\n\tand the following text should app" +
                     "ear: <result>", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -66,13 +66,13 @@ namespace UITestingSiteTestProject.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Reach Hello page")]
+        [NUnit.Framework.DescriptionAttribute("Hello test")]
         [NUnit.Framework.CategoryAttribute("mytag")]
         [NUnit.Framework.TestCaseAttribute("John", new string[0])]
         [NUnit.Framework.TestCaseAttribute("Sophia", new string[0])]
         [NUnit.Framework.TestCaseAttribute("Charlie", new string[0])]
         [NUnit.Framework.TestCaseAttribute("Emily", new string[0])]
-        public virtual void ReachHelloPage(string name, string[] exampleTags)
+        public virtual void HelloTest(string name, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "mytag"};
@@ -80,18 +80,16 @@ namespace UITestingSiteTestProject.Features
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Reach Hello page", @__tags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hello test", @__tags);
 #line 8
 this.ScenarioSetup(scenarioInfo);
 #line 9
- testRunner.Given("I have opened the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have opened the Form page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
- testRunner.And("I have navigated to the Form page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
  testRunner.When(string.Format("I enter {0} to the form", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
+#line 11
  testRunner.And("I click on the Go button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 13
+#line 12
  testRunner.Then(string.Format("the Hello page should welcome {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

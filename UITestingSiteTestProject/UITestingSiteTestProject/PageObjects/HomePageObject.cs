@@ -8,24 +8,45 @@ using System.Threading.Tasks;
 
 namespace UITestingSiteTestProject.PageObjects
 {
-    class HomePageObject
+    class HomePageObject : AbstractPageObject
     {
 
-        private IWebDriver _driver;
-
         public HomePageObject(IWebDriver driver)
+            : base(driver)
         {
-            _driver = driver;
+            pageUrl = "http://uitest.duodecadits.com/";
             PageFactory.InitElements(_driver, this);
         }
 
-        [FindsBy(How = How.Id, Using = "form")]
-        public IWebElement btnForm { get; set; }
+        [FindsBy(How = How.CssSelector, Using = "h1")]
+        public IWebElement header { get; set; }
+        [FindsBy(How = How.XPath, Using = "//p[contains(text(), 'This site is dedicated to perform some exercises and demonstrate automated web testing.')]")]
+        public IWebElement purposeParagraph { get; set; }        
 
-        public void NavigateToFormPage()
+        public bool IsHeaderVisibleWithValue(string expectedHeader)
         {
-            btnForm.Click();
+            try
+            {
+                bool isDisplayed = header.Displayed;
+                bool isExpected = expectedHeader.Equals(header.Text);
+                return isDisplayed && isExpected;
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            };
         }
 
+        public bool IsTextVisibleWithThePurposeOfTheSite()
+        {
+            try
+            {
+                return purposeParagraph.Displayed;
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            };
+        }
     }
 }

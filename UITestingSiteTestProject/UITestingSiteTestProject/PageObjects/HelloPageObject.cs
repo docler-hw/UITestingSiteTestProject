@@ -8,21 +8,23 @@ using System.Threading.Tasks;
 
 namespace UITestingSiteTestProject.PageObjects
 {
-    class HelloPageObject
+    class HelloPageObject : AbstractPageObject
     {
 
-        private IWebDriver _driver;
-
         public HelloPageObject(IWebDriver driver)
+            : base(driver)
         {
-            _driver = driver;
+            pageUrl = "http://uitest.duodecadits.com/hello.html";
             PageFactory.InitElements(_driver, this);
         }
 
-        //_driver.FindElement(By.Id("form")).Click();
-
         [FindsBy(How = How.Id, Using = "hello-text")]
         public IWebElement txtHello { get; set; }
+
+        public override bool IsPageOpened()
+        {
+            return _driver.Url.StartsWith(pageUrl);
+        }
 
         public string ParseHelloMessage()
         {

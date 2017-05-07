@@ -23,18 +23,11 @@ namespace UITestingSiteTestProject.Steps
             _driver = driver;
         }
 
-        [Given(@"I have navigated to the Form page")]
-        public void GivenIHaveNavigatedToTheFormPage()
-        {
-            new HomePageObject(_driver).NavigateToFormPage();
-        }
-
         [When(@"I enter (.*) to the form")]
-        public void WhenIEnterJohnToTheForm(string name)
+        public void WhenIEnterTheNameToTheForm(string name)
         {
             new FormPageObject(_driver).EnterNameIntoHelloTextInput(name);
         }
-
 
         [When(@"I click on the Go button")]
         public void WhenIClickOnTheGoButton()
@@ -43,11 +36,12 @@ namespace UITestingSiteTestProject.Steps
         }
 
         [Then(@"the Hello page should welcome (.*)")]
-        public void ThenTheHelloPageShouldWelcomeJohn(string name)
+        public void ThenTheHelloPageShouldWelcomeTheName(string name)
         {
-            string expectedHelloMessage = new HelloPageObject(_driver).ParseHelloMessage();
+            HelloPageObject helloPageObject = new HelloPageObject(_driver);
+            Assert.That(helloPageObject.IsPageOpened(), "Hello page is not opened");
+            string expectedHelloMessage = helloPageObject.ParseHelloMessage();
             Assert.AreEqual("Hello " + name + "!", expectedHelloMessage, "Hello text does not cointan the expected value");
         }
-
     }
 }

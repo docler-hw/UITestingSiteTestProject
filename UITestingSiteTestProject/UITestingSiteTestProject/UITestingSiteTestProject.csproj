@@ -69,17 +69,69 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
-    <Compile Include="Features\HelloPage.feature.cs">
+    <Compile Include="Features\REQ-UI-11-Form.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>HelloPage.feature</DependentUpon>
+      <DependentUpon>REQ-UI-11-Form.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\Navigation.feature.cs">
+    <Compile Include="Features\REQ-UI-02-Logo.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Navigation.feature</DependentUpon>
+      <DependentUpon>REQ-UI-02-Logo.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-04-HomeButtonStatus.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-04-HomeButtonStatus.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-05-FormButton.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-05-FormButton.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-07-Error.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-07-Error.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-08-UITestingButton.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-08-UITestingButton.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-09-HomeHeader.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-09-HomeHeader.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-10-HomeParagraph.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-10-HomeParagraph.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-12-Hello.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-12-Hello.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-01-Title.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-01-Title.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-03-HomeButton.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-03-HomeButton.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\REQ-UI-06-FormButtonStatus.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REQ-UI-06-FormButtonStatus.feature</DependentUpon>
     </Compile>
     <Compile Include="Hooks.cs" />
+    <Compile Include="PageObjects\AbstractPageObject.cs" />
+    <Compile Include="PageObjects\BasePageObject.cs" />
     <Compile Include="PageObjects\FormPageObject.cs" />
     <Compile Include="PageObjects\HelloPageObject.cs" />
     <Compile Include="PageObjects\HomePageObject.cs" />
@@ -89,13 +141,53 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Features\HelloPage.feature">
+    <None Include="Features\REQ-UI-11-Form.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>HelloPage.feature.cs</LastGenOutput>
+      <LastGenOutput>REQ-UI-11-Form.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\Navigation.feature">
+    <None Include="Features\REQ-UI-02-Logo.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Navigation.feature.cs</LastGenOutput>
+      <LastGenOutput>REQ-UI-02-Logo.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-04-HomeButtonStatus.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-04-HomeButtonStatus.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-05-FormButton.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-05-FormButton.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-07-Error.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-07-Error.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-08-UITestingButton.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-08-UITestingButton.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-09-HomeHeader.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-09-HomeHeader.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-10-HomeParagraph.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-10-HomeParagraph.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-12-Hello.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-12-Hello.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-01-Title.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-01-Title.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-03-HomeButton.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-03-HomeButton.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\REQ-UI-06-FormButtonStatus.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>REQ-UI-06-FormButtonStatus.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

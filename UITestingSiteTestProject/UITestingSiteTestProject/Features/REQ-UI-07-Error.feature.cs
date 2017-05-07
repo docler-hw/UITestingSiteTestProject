@@ -18,20 +18,20 @@ namespace UITestingSiteTestProject.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Navigation")]
-    public partial class NavigationFeature
+    [NUnit.Framework.DescriptionAttribute("REQ-UI-07")]
+    public partial class REQ_UI_07Feature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Navigation.feature"
+#line 1 "REQ-UI-07-Error.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Navigation", "\tOn every page the title should be UI Testing Site", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "REQ-UI-07", "\tWhen I click on the Error button, I should get a 404 HTTP response code", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,18 +64,39 @@ namespace UITestingSiteTestProject.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("UI Test site title")]
+        [NUnit.Framework.DescriptionAttribute("ErrorButton - From Home page")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void UITestSiteTitle()
+        public virtual void ErrorButton_FromHomePage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("UI Test site title", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ErrorButton - From Home page", new string[] {
                         "mytag"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
- testRunner.Given("I have opened the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have opened the Home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
- testRunner.Then("the title should be UI Testing Site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I clicked on the Error button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 8
+ testRunner.Then("Error 404 status should return", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("ErrorButton - From Form page")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public virtual void ErrorButton_FromFormPage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ErrorButton - From Form page", new string[] {
+                        "mytag"});
+#line 11
+this.ScenarioSetup(scenarioInfo);
+#line 12
+ testRunner.Given("I have opened the Form page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 13
+ testRunner.When("I clicked on the Error button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 14
+ testRunner.Then("Error 404 status should return", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

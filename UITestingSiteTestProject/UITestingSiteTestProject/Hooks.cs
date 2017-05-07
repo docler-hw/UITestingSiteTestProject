@@ -27,7 +27,6 @@ namespace UITestingSiteTestProject
         public void Initialize()
         {
             _driver = new ChromeDriver();
-            _driver.Navigate().GoToUrl("http://uitest.duodecadits.com/");
             _objectContainer.RegisterInstanceAs<IWebDriver>(_driver);
         }
 
