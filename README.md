@@ -1,14 +1,15 @@
 # UITestingSiteTestProject
-This repository contains a UI test project to test UITestingSite
+This repository contains a UI test automation project to test UITestingSite
 
 Technologies used for the project:
 
  * Windows 10 Operation System
  * Visual Studio 2017 Community Edition with the latest .NET versions
- * The test cases written in Gherkin, C#, Specflow, NUnit, Selenium (Chrome WebDriver)
+ * The test cases written in Gherkin, C#, Specflow, NUnit, Selenium
+ * Google Chrome web browser v58.0.3029.96 (64-bit)
 
 ### Project structure:
- * Features folder: It contains all feature file with the specified test cases
+ * Features folder: It contains all feature files with the specified test cases
  * PageObjects folder: It contains all the page object classes related to the tested pages
  * Steps folder: It contains all the binded tests steps for the feature files
  * Hooks.cs: this class is the responsible for the different NUnit test hooks
